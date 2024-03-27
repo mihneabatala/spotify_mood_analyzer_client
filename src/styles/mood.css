@@ -1,0 +1,468 @@
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.mood-component {
+  background-color: #222;
+  height: calc(100vh - 20%);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.mood-title {
+  background-image: var(--purple);
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+}
+.button-mood {
+  border: none;
+  background: var(--purple);
+  color: var(--white);
+  cursor: pointer;
+  transition: background-color 1s ease;
+}
+.button-mood:hover {
+  background: var(--white);
+  color: var(--black);
+}
+.to-library:hover {
+  background: var(--white);
+  color: var(--black);
+}
+
+.loading-animation {
+  margin-top: 3rem;
+  width: 100%;
+}
+
+.loading-text {
+  font-size: var(--xl);
+  color: white;
+  padding: 0 1rem;
+}
+
+.loader {
+  border: 5px solid grey;
+  border-top: 5px solid var(--green);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 2s linear infinite;
+}
+
+.mood-text {
+  color: white;
+  text-align: center;
+  font-style: italic;
+}
+.mood-info {
+  background-image: var(--purple);
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+  width: 100%;
+}
+.mood-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.confirmation-message {
+  color: white;
+  text-align: center;
+}
+
+.mood-container {
+  width: 100%;
+  height: auto;
+}
+
+.mood-select {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 1rem;
+}
+
+.mood-select select {
+  width: 50%;
+  padding: 1rem;
+  font-size: var(--l);
+}
+
+.mood-select button {
+  width: 50%;
+  margin: 1rem 0;
+}
+.discover-timer {
+  color: white;
+  font-size: var(--ll);
+  text-align: center;
+}
+
+.max-playlists-message {
+  color: white;
+  text-align: center;
+}
+
+/* Phone (Portrait) */
+
+@media (max-width: 480px) {
+  .mood-component {
+    width: 95%;
+    height: 700px;
+    max-height: 700px;
+    margin: 1rem 0;
+    padding: 10px;
+    border-radius: 2rem;
+  }
+  .mood-title {
+    font-size: var(--xl);
+  }
+  .button-mood {
+    padding: 1rem;
+    font-size: var(--l);
+    border-radius: 3em;
+    margin: 2rem auto;
+  }
+  .loader {
+    border: 5px solid grey;
+    border-top: 5px solid var(--green);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+  }
+  .loading-text {
+    font-size: var(--l);
+    padding: 0 1rem;
+  }
+  .mood-container {
+    width: 100%;
+    max-height: 600px;
+  }
+  .mood-text {
+    padding: 1rem;
+    font-size: var(--xl);
+  }
+  .discover-timer {
+    font-size: var(--m);
+  }
+  .mood-info {
+    margin: 0.5rem 0;
+    font-size: var(--ll);
+  }
+  .mood-buttons {
+    padding: 2rem;
+  }
+  .mood-select {
+    padding: 2rem 1rem;
+  }
+  .mood-select select {
+    width: 100%;
+    padding: 0.5rem;
+    overflow: scroll;
+    font-size: var(--m);
+  }
+  .mood-select option {
+    font-size: var(--n); 
+    background-color: white; 
+    color: black; 
+  }
+  .mood-select button {
+    width: 50%;
+    margin: 1rem 0;
+  }
+  .confirmation-message {
+    font-size: var(--l);
+    margin: 2rem 0;
+  }
+  .max-playlists-message {
+    font-size: var(--ll);
+  }
+}
+
+/* Mobile Phones (Landscape) */
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .mood-component {
+    width: 60%;
+    padding: 10px;
+    border-radius: 2rem;
+  }
+  .mood-title {
+    font-size: var(--xl);
+    padding: 1rem;
+  }
+  .button-mood {
+    padding: 0.8rem;
+    font-size: var(--m);
+    border-radius: 3rem;
+    margin: 2rem auto;
+  }
+  .loader {
+    border: 5px solid grey;
+    border-top: 5px solid var(--green);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+  }
+  .loading-text {
+    font-size: var(--ll);
+    padding: 0 1rem;
+  }
+  .mood-container {
+    width: 100%;
+    height: auto;
+  }
+  .mood-text {
+    padding: 3rem;
+    font-size: var(--ll);
+  }
+  .discover-timer {
+    font-size: var(--l);
+  }
+  .mood-info {
+    padding: 0.5rem;
+    font-size: var(--ll);
+  }
+  .mood-buttons {
+    padding: 2rem;
+  }
+  .mood-select {
+    padding: 2rem 1rem;
+  }
+  .mood-select select {
+    width: 50%;
+    padding: 1rem;
+    font-size: var(--l);
+  }
+  .mood-select button {
+    width: 50%;
+    margin: 1rem 0;
+  }
+  .confirmation-message {
+    font-size: var(--l);
+    padding: 1rem;
+    margin: 4rem 0;
+  }
+  .max-playlists-message {
+    font-size: var(--ll);
+  }
+}
+
+/* Tablet (Portrait) */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .mood-component {
+    width: 60%;
+    padding: 10px;
+    border-radius: 2rem;
+  }
+  .mood-title {
+    font-size: var(--xxl);
+    padding: 1rem;
+  }
+  .button-mood {
+    padding: 0.8rem;
+    font-size: var(--l);
+    border-radius: 3rem;
+    margin: 2rem auto;
+  }
+  .loader {
+    border: 6px solid grey;
+    border-top: 6px solid var(--green);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+  .loading-text {
+    font-size: var(--xl);
+    padding: 0 1.5rem;
+  }
+  .mood-container {
+    width: 100%;
+    height: auto;
+  }
+  .mood-text {
+    padding: 3rem;
+    font-size: var(--ll);
+  }
+  .discover-timer {
+    font-size: var(--l);
+  }
+  .mood-info {
+    padding: 2rem;
+    font-size: var(--xl);
+  }
+  .mood-buttons {
+    padding: 2rem;
+  }
+  .mood-select {
+    padding: 2rem 1rem;
+  }
+  .mood-select select {
+    width: 50%;
+    padding: 1rem;
+    font-size: var(--l);
+  }
+  .mood-select button {
+    width: 50%;
+    margin: 1rem 0;
+  }
+  .confirmation-message {
+    font-size: var(--l);
+    padding: 1rem;
+    margin: 4rem 0;
+  }
+  .max-playlists-message {
+    font-size: var(--ll);
+  }
+}
+
+/* Small Desktops and Laptops */
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .mood-component {
+    width: 55%;
+    padding: 10px;
+    border-radius: 2rem;
+  }
+  .mood-title {
+    font-size: var(--xxl);
+    padding: 1rem;
+  }
+  .button-mood {
+    padding: 1.2rem;
+    font-size: var(--ll);
+    border-radius: 3rem;
+    margin: 2rem auto;
+  }
+  .loader {
+    border: 8px solid grey;
+    border-top: 8px solid var(--green);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+  .loading-text {
+    font-size: var(--xl);
+    padding: 0 1.5rem;
+  }
+  .mood-container {
+    width: 100%;
+    height: auto;
+  }
+  .mood-text {
+    padding: 3rem;
+    font-size: var(--xl);
+  }
+  .discover-timer {
+    font-size: var(--l);
+  }
+  .mood-info {
+    padding: 2rem;
+    font-size: var(--xl);
+  }
+  .mood-buttons {
+    padding: 2rem;
+  }
+  .mood-select {
+    padding: 5rem 1rem;
+  }
+  .mood-select select {
+    width: 50%;
+    padding: 1rem;
+    font-size: var(--l);
+  }
+  .mood-select button {
+    width: 50%;
+    margin: 1rem 0;
+  }
+  .confirmation-message {
+    font-size: var(--xl);
+    padding: 1rem;
+    margin: 4rem 0;
+  }
+  .max-playlists-message {
+    font-size: var(--ll);
+  }
+}
+
+/* Large Desktops */
+
+@media (min-width: 1441px) {
+  .mood-component {
+    width: 55%;
+    padding: 20px;
+    border-radius: 2rem;
+  }
+  .mood-title {
+    font-size: var(--x3l);
+    padding: 1rem;
+  }
+  .button-mood {
+    padding: 1.2rem;
+    font-size: var(--xl);
+    border-radius: 3rem;
+    margin: 2.5rem auto;
+  }
+  .loader {
+    border: 8px solid grey;
+    border-top: 8px solid var(--green);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+  }
+  .loading-text {
+    font-size: var(--xxl);
+    padding: 0 1.5rem;
+  }
+  .mood-container {
+    width: 100%;
+    height: auto;
+  }
+  .mood-text {
+    padding: 1.5rem;
+    font-size: var(--xxl);
+  }
+  .discover-timer {
+    font-size: var(--ll);
+  }
+  .mood-info {
+    padding: 2rem;
+    font-size: var(--xxl);
+  }
+  .mood-buttons {
+    padding: 2rem;
+  }
+  .mood-select {
+    padding: 2rem 1rem;
+  }
+  .mood-select select {
+    width: 50%;
+    padding: 1rem;
+    font-size: var(--l);
+  }
+  .mood-select button {
+    width: 50%;
+    margin: 1rem 0;
+  }
+  .confirmation-message {
+    font-size: var(--xl);
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+  .max-playlists-message {
+    font-size: var(--ll);
+  }
+}

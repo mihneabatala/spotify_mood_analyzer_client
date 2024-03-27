@@ -1,0 +1,321 @@
+.history-component {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 2rem;
+  width: 35%;
+  border: none;
+  height: calc(100vh - 20%);
+}
+
+.history-title {
+  color: white;
+  font-size: var(--xl);
+  margin-bottom: var(--l);
+  text-align: center;
+}
+
+.tracks-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-gap: 20px;
+  max-width: 100%;
+  height: calc(100% - 50px); /* Adjust the height as needed */
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #333 #222;
+  margin: 1rem 0;
+}
+
+.history-tracks-empty {
+  text-align: center;
+  color: white;
+  font-size: var(--xl);
+  padding: 3rem;
+}
+
+.track {
+  background-color: #333;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.track img {
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+}
+
+.track p {
+  margin: 5px 0;
+}
+
+.track p:first-child {
+  color: white;
+  font-size: var(--l);
+}
+
+.track p:last-child {
+  color: var(--grey);
+  font-size: var(--m);
+}
+
+/* Phone (Portrait) */
+
+@media (max-width: 480px) {
+  .history-component {
+    padding: 10px;
+    width: 95%;
+    height: 500px;
+    margin-top: 1rem;
+  }
+  .history-title {
+    font-size: var(--ll);
+    margin-bottom: var(--l);
+  }
+  .tracks-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
+    grid-gap: 10px;
+    max-width: 100%;
+    height: calc(100% - 70px);
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #333 #222;
+    margin: 1rem 0;
+  }
+  .history-tracks-empty {
+    font-size: var(--l);
+    padding: 3rem;
+  }
+
+  .track {
+    background-color: #333;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  .track img {
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+  }
+
+  .track p {
+    margin: 5px 0;
+  }
+
+  .track p:first-child {
+    font-size: var(--n);
+  }
+
+  .track p:last-child {
+    font-size: var(--s);
+  }
+}
+
+/* Mobile Phones (Landscape) */
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .history-component {
+    padding: 10px;
+  }
+  .history-title {
+    font-size: var(--ll);
+    margin-bottom: var(--l);
+  }
+  .tracks-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
+    grid-gap: 10px;
+    max-width: 100%;
+    height: calc(100% - 70px);
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #333 #222;
+    margin: 1rem 0;
+  }
+  .history-tracks-empty {
+    font-size: var(--l);
+    padding: 3rem;
+  }
+
+  .track {
+    background-color: #333;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  .track img {
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+  }
+
+  .track p {
+    margin: 5px 0;
+  }
+
+  .track p:first-child {
+    font-size: var(--n);
+  }
+
+  .track p:last-child {
+    font-size: var(--s);
+  }
+}
+
+/* Tablet (Portrait) */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .history-component {
+    padding: 10px;
+  }
+  .history-title {
+    font-size: var(--ll);
+    margin-bottom: var(--l);
+  }
+  .tracks-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
+    grid-gap: 10px;
+    max-width: 100%;
+    height: calc(100% - 50px);
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #333 #222;
+    margin: 1rem 0;
+  }
+  .history-tracks-empty {
+    font-size: var(--ll);
+    padding: 3rem;
+  }
+
+  .track {
+    background-color: #333;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  .track img {
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+  }
+
+  .track p {
+    margin: 5px 0;
+  }
+
+  .track p:first-child {
+    font-size: var(--m);
+  }
+
+  .track p:last-child {
+    font-size: var(--n);
+  }
+}
+
+/* Small Desktops and Laptops */
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .history-component {
+    padding: 15px;
+  }
+  .history-title {
+    font-size: var(--ll);
+    margin-bottom: var(--l);
+  }
+  .tracks-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-gap: 10px;
+    max-width: 100%;
+    height: calc(100% - 50px);
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #333 #222;
+    margin: 1rem 0;
+  }
+  .history-tracks-empty {
+    font-size: var(--ll);
+    padding: 3rem;
+  }
+
+  .track {
+    background-color: #333;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  .track img {
+    height: 54px;
+    width: 54px;
+    border-radius: 50%;
+  }
+
+  .track p {
+    margin: 5px 0;
+  }
+
+  .track p:first-child {
+    font-size: var(--m);
+  }
+
+  .track p:last-child {
+    font-size: var(--n);
+  }
+}
+
+/* Large Desktops */
+
+@media (min-width: 1441px) {
+  .history-component {
+    padding: 20px;
+  }
+  .history-title {
+    font-size: var(--xl);
+    margin-bottom: var(--l);
+  }
+  .line {
+    height: var(--x3s);
+  }
+  .tracks-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
+    grid-gap: 10px;
+    max-width: 100%;
+    height: calc(100% - 50px);
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #333 #222;
+    margin: 1rem 0;
+  }
+  .history-tracks-empty {
+    font-size: var(--ll);
+    padding: 3rem;
+  }
+
+  .track {
+    background-color: #333;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  .track img {
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+  }
+
+  .track p {
+    margin: 5px 0;
+  }
+
+  .track p:first-child {
+    font-size: var(--l);
+  }
+
+  .track p:last-child {
+    font-size: var(--m);
+  }
+}

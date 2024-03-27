@@ -1,0 +1,60 @@
+.footer {
+  padding: 10px 0;
+  background: var(--purple);
+  height: 5%;
+  width: 100%;
+  color: var(--grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Phone (Portrait) */
+
+@media (max-width: 480px) {
+  .footer {
+    height: 5%;
+    font-size: var(--s);
+  }
+}
+
+/* Mobile Phones (Landscape) */
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .footer {
+    font-size: var(--s);
+    position: fixed;
+    bottom: 0;
+  }
+}
+
+/* Tablet (Portrait) */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footer {
+    font-size: var(--n);
+    position: fixed;
+    bottom: 0;
+  }
+}
+
+/* Small Desktops and Laptops */
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .footer {
+    font-size: var(--m);
+    position: fixed;
+    bottom: 0;
+  }
+}
+
+/* Large Desktops */
+
+@media (min-width: 1441px) {
+  .footer {
+    font-size: var(--l);
+    position: fixed;
+    bottom: 0;
+  }
+}

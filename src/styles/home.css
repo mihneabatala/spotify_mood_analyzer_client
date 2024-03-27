@@ -1,0 +1,47 @@
+.home-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem 0;
+}
+
+@media (max-width: 480px) {
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+  }
+}
+
+/* Mobile Phones (Landscape) */
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .home-container {
+    height: calc(100vh - 20%);
+  }
+}
+
+/* Tablet (Portrait) */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .home-container {
+    height: calc(100vh - 20%);
+  }
+}
+
+/* Small Desktops and Laptops */
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .home-container {
+    height: calc(100vh - 20%);
+  }
+}
+
+/* Large Desktops */
+
+@media (min-width: 1441px) {
+  .home-container {
+    height: calc(100vh - 20%);
+  }
+}

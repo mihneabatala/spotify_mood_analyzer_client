@@ -1,0 +1,255 @@
+@import "../styles/main.css";
+@keyframes moveUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px rgb(94, 94, 94), 0 0 10px rgb(121, 120, 120),
+      0 0 15px rgb(151, 151, 151);
+  }
+
+  to {
+    text-shadow: 0 0 5px #807e7e, 0 0 10px rgb(141, 141, 141),
+      0 0 15px rgb(51, 51, 51);
+  }
+}
+
+.login-component {
+  height: inherit;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  color: var(--white);
+  font-style: italic;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.login-info {
+  color: var(--white);
+  font-style: italic;
+}
+
+.line {
+  background-color: var(--green);
+  border: none;
+  width: 100%;
+}
+
+.description {
+  color: var(--white);
+}
+
+.description p {
+  text-align: center;
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 60%;
+}
+.arrow {
+  animation: moveUpDown 1.5s ease-in-out infinite;
+}
+
+.login-button {
+  border: none;
+  background-color: var(--green);
+  color: var(--white);
+  font-size: var(--xl);
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 2.5rem;
+  transition: background-color 1s ease;
+}
+.login-button:hover {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.login-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--purple);
+  height: 5%;
+}
+
+.login-footer p {
+  color: var(--grey);
+  font-size: var(--xl);
+}
+
+/* Phone (Portrait) */
+
+@media (max-width: 480px) {
+  .title {
+    font-size: var(--ll);
+  }
+  .login-info {
+    font-size: var(--m);
+    margin-top: 1rem;
+  }
+  .info {
+    padding: var(--l);
+  }
+  .line {
+    height: var(--x3s);
+  }
+  .description {
+    font-size: var(--l);
+    width: 90%;
+    margin: 4rem auto 0;
+  }
+  .arrow {
+    width: 100px;
+    height: 100px;
+  }
+  .login-button {
+    font-size: var(--l);
+    padding: 1rem;
+  }
+}
+
+/* Mobile Phones (Landscape) */
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .title {
+    font-size: var(--ll);
+  }
+  .login-info {
+    font-size: var(--m);
+  }
+  .info {
+    padding: var(--m);
+  }
+  .line {
+    height: var(--x3s);
+  }
+  .description {
+    font-size: var(--l);
+    width: 90%;
+    margin: 4rem auto 0;
+    padding: 1rem;
+  }
+  .arrow {
+    width: 100px;
+    height: 100px;
+  }
+  .login-button {
+    font-size: var(--l);
+    padding: 1rem;
+  }
+}
+
+/* Tablet (Portrait) */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .title {
+    font-size: var(--xl);
+  }
+  .login-info {
+    font-size: var(--ll);
+  }
+  .info {
+    padding: var(--m);
+  }
+  .line {
+    height: var(--x3s);
+  }
+  .description {
+    font-size: var(--xl);
+    width: 80%;
+    margin: 4rem auto 0;
+    padding: 1rem;
+  }
+  .arrow {
+    width: 110px;
+    height: 110px;
+  }
+  .login-button {
+    font-size: var(--ll);
+    padding: 1rem;
+  }
+}
+
+/* Small Desktops and Laptops */
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .title {
+    font-size: var(--xxl);
+  }
+  .login-info {
+    font-size: var(--xl);
+  }
+  .info {
+    padding: var(--m);
+  }
+  .line {
+    height: var(--x3s);
+  }
+  .description {
+    font-size: var(--xl);
+    width: 80%;
+    margin: 4rem auto 0;
+    padding: 1rem;
+  }
+  .arrow {
+    width: 120px;
+    height: 120px;
+  }
+  .login-button {
+    font-size: var(--ll);
+    padding: 1.2rem;
+  }
+}
+
+/* Large Desktops */
+
+@media (min-width: 1441px) {
+  .title {
+    font-size: var(--x3l);
+  }
+  .login-info {
+    font-size: var(--xxl);
+  }
+  .info {
+    padding: var(--l);
+  }
+  .line {
+    height: var(--xxs);
+  }
+  .description {
+    font-size: var(--xxl);
+    width: 70%;
+    margin: 5rem auto 0;
+    padding: 1rem;
+  }
+  .arrow {
+    width: 130px;
+    height: 130px;
+  }
+  .login-button {
+    font-size: var(--xl);
+    padding: 1.5rem;
+  }
+}

@@ -1,0 +1,257 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 8%;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+.user-name {
+  color: var(--white);
+}
+
+.user-img {
+  border-radius: 8rem;
+}
+
+.navbar {
+  width: 20%;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-item {
+  color: var(--white);
+  border-radius: 2.5rem;
+  background: var(--purple);
+  padding: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: transform ease 300ms;
+  text-decoration: none;
+}
+.link {
+  text-decoration: none;
+  font-size: var(--ll);
+}
+.link:visited {
+  text-decoration: none;
+  color: white;
+}
+.link:hover {
+  color: black;
+}
+
+.logout-button {
+  padding: 1rem;
+  border: none;
+  background-color: var(--green);
+  color: var(--white);
+  font-size: var(--xl);
+  cursor: pointer;
+  border-radius: 2.5rem;
+  transition: background-color 1s ease;
+}
+
+.logout-button:hover {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.toggle-btn {
+  display: none;
+}
+.dropdown-menu {
+  display: none;
+}
+.icon {
+  color: rgb(204, 35, 167);
+  width: 25px;
+  height: 25px;
+}
+
+/* Phone (Portrait) */
+
+@media (max-width: 480px) {
+  .logout,
+  .navbar {
+    display: none;
+  }
+
+  .toggle-btn {
+    display: flex;
+    margin-right: 0.8rem;
+    justify-content: right;
+    width: 50px;
+  }
+  .dropdown-menu {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    background: var(--purple);
+    width: 100px;
+    right: 10px;
+    top: 60px;
+    border-radius: 1rem;
+  }
+
+  .list {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0.3rem;
+  }
+  .list li {
+    padding: 0.3rem;
+  }
+  .link {
+    text-decoration: none;
+    font-size: var(--l);
+  }
+  .link:hover {
+    color: white;
+  }
+
+  .user-img {
+    width: 100px;
+  }
+
+  .user-info {
+    margin-left: var(--xxs);
+  }
+  .user-name {
+    margin-left: 0.5rem;
+    font-size: var(--l);
+  }
+  .list-item {
+    padding: 0.5rem;
+  }
+}
+
+/* Mobile Phones (Landscape) */
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .user-img {
+    width: 100px;
+  }
+  .user-info {
+    margin-left: var(--n);
+  }
+
+  .user-name {
+    margin-left: 1rem;
+    font-size: var(--m);
+  }
+  .list-item {
+    padding: 0.5rem;
+  }
+  .link {
+    text-decoration: none;
+    font-size: var(--m);
+  }
+  .logout {
+    margin-right: var(--n);
+  }
+  .logout-button {
+    padding: 0.6rem;
+    font-size: var(--m);
+  }
+}
+
+/* Tablet (Portrait) */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .user-img {
+    width: 120px;
+  }
+  .user-info {
+    margin-left: var(--m);
+  }
+
+  .user-name {
+    margin-left: 2rem;
+    font-size: var(--l);
+  }
+  .list-item {
+    padding: 0.7rem;
+  }
+  .link {
+    text-decoration: none;
+    font-size: var(--m);
+  }
+  .logout {
+    margin-right: var(--m);
+  }
+  .logout-button {
+    padding: 1rem;
+    font-size: var(--m);
+  }
+}
+
+/* Small Desktops and Laptops */
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .user-img {
+    width: 150px;
+  }
+  .user-info {
+    margin-left: var(--l);
+  }
+  .user-name {
+    margin-left: 3rem;
+    font-size: var(--ll);
+  }
+  .list-item {
+    padding: 0.5rem;
+  }
+  .link {
+    text-decoration: none;
+    font-size: var(--ll);
+  }
+  .logout {
+    margin-right: var(--l);
+  }
+  .logout-button {
+    padding: 1rem;
+    font-size: var(--l);
+  }
+}
+
+/* Large Desktops */
+
+@media (min-width: 1441px) {
+  .user-img {
+    width: 200px;
+  }
+  .user-info {
+    margin-left: var(--l);
+  }
+  .user-name {
+    margin-left: 4rem;
+    font-size: var(--xl);
+  }
+  .list-item {
+    padding: 1rem;
+  }
+  .link {
+    text-decoration: none;
+    font-size: var(--xl);
+  }
+  .logout {
+    margin-right: var(--l);
+  }
+  .logout-button {
+    padding: 1rem;
+    font-size: var(--xl);
+  }
+}
