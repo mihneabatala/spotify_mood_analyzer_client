@@ -1,4 +1,5 @@
-# Client for :  https://spotify-mood.netlify.app/
+# Spotify Mood Analyzer :  https://spotify-mood.netlify.app/
+
 
 ## Login Component:
 This component is responsible for rendering the login page where users can authenticate with Spotify.
