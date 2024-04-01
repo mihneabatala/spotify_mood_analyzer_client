@@ -1,5 +1,5 @@
 # Spotify Mood Analyzer :  https://spotify-mood.netlify.app/
-## For acces I need your email adress because of Spotify Web API developer mode
+## For access I need your email address due to Spotify Web API developer mode policy
 
 
 ## Login Component:
