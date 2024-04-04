@@ -1,5 +1,5 @@
 # Spotify Mood Analyzer :  https://spotify-mood.netlify.app/
-## For access I need your email address due to Spotify Web API developer mode policy
+## The server has a 50 second delay because of the free plan on render.com. For access I need your email address due to Spotify Web API developer mode policy
 
 
 ## Login Component:
